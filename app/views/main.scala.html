@@ -6,10 +6,29 @@
 
 <html>
     <head>
-        <title>@title</title>
-        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
-        <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
-        <script src="@routes.Assets.at("javascripts/jquery-1.9.0.min.js")" type="text/javascript"></script>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Aron & Kelly</title>
+        <meta name="description" content="This is the a responsive web site for Aron and Kelly's upcoming May 2014 wedding." />  
+        <!--[if IE 8]><link rel="stylesheet" href="@routes.Assets.at("css/ie8.css")" /> <![endif]-->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,700">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Playfair+Display:400,400italic">
+        <link rel="stylesheet" href="@routes.Assets.at("css/normalize.min.css")" />
+        <link rel="stylesheet" href="@routes.Assets.at("css/foundation.min.css")" />      
+        <link rel="stylesheet" href="@routes.Assets.at("css/flexslider.css")" />
+        <link rel="stylesheet" href="@routes.Assets.at("css/style.css")" />
+        <link rel="stylesheet" href="@routes.Assets.at("css/media-queries.css")" />      
+        <script src="@routes.Assets.at("js/vendor/custom.modernizr.js")"></script>
+
+        <!-- Icons Fonts Are Awesome -->
+        <link rel="stylesheet" href="@routes.Assets.at("css/font-awesome.min.css")" />
+
+        <!-- Fav and touch icons -->
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="@routes.Assets.at("img/apple-touch-icon-144-precomposed.png")">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="@routes.Assets.at("img/apple-touch-icon-114-precomposed.png")">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="@routes.Assets.at("img/apple-touch-icon-72-precomposed.png")">
+        <link rel="apple-touch-icon-precomposed" href="@routes.Assets.at("img/apple-touch-icon-57-precomposed.png")">
+        <link rel="shortcut icon" href="@routes.Assets.at("img/favicon.ico")">
     </head>
     <body>
         @content
