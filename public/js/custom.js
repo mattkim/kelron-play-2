@@ -31,7 +31,7 @@ $(document).ready(function() {
 
 	function backStrech() {
 		$("aside").backstretch([
-			"img/placeholder-1.png",
+			"https://scontent-b-sea.xx.fbcdn.net/hphotos-frc3/t1.0-9/1613951_10152328686580844_1741064739_n.jpg",
 
 			], {duration: 5000, fade: 1000});
 	}
