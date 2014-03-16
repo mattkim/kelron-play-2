@@ -31,7 +31,7 @@ $(document).ready(function() {
 
 	function backStrech() {
 		$("aside").backstretch([
-			"https://scontent-b-sea.xx.fbcdn.net/hphotos-frc3/t1.0-9/1613951_10152328686580844_1741064739_n.jpg",
+			"img/placeholder-1.png",
 
 			], {duration: 5000, fade: 1000});
 	}
@@ -61,42 +61,39 @@ $(document).ready(function() {
 /*-----------------------------------------------------------------------------------*/
 
 var map;
-var myLatlng = new google.maps.LatLng(41.38031,2.17416); // Specify YOUR coordinates
+var myLatlng = new google.maps.LatLng(47.60759,-122.343227); // Specify YOUR coordinates
 
 var MY_MAPTYPE_ID = 'custom_style';
 
 function initialize() {
 
-	//creates a custom color scheme for map
-	var featureOpts = [
-	{
-		"featureType": "road",
-		"stylers": [
-		{ "hue": "#ff3300" },
-		{ "gamma": 0.82 },
-		{ "visibility": "on" },
-		{ "saturation": 62 },
-		{ "lightness": -7 }
-		]
-	},{
-		"featureType": "poi",
-		"stylers": [
-		{ "hue": "#ff0000" },
-		{ "lightness": 14 }
-		]
-	},{
-		"stylers": [
-		{ "hue": "#ff0000" }
-		]
-	}
-	]
-
+	  var featureOpts = [
+    {
+      stylers: [
+        { hue: "#00ffe6" },
+        { saturation: -20 }
+      ]
+    },{
+      featureType: "road",
+      elementType: "geometry",
+      stylers: [
+        { lightness: 100 },
+        { visibility: "simplified" }
+      ]
+    },{
+      featureType: "road",
+      elementType: "labels",
+      stylers: [
+        { visibility: "off" }
+      ]
+    }
+  ];
 	var mapOptions = {
-		zoom: 18,
+		zoom: 17,
 		center: myLatlng,
 		disableDefaultUI: true,
-		scrollwheel: false,
-		draggable: false,
+		scrollwheel: true,
+		draggable: true,
 		mapTypeControlOptions: {
 			mapTypeIds: [google.maps.MapTypeId.ROADMAP, MY_MAPTYPE_ID]
 		},
@@ -112,14 +109,22 @@ function initialize() {
 
 	var customMapType = new google.maps.StyledMapType(featureOpts, styledMapOptions);
 
-	var image = new google.maps.MarkerImage("img/map-marker@2x.png", null, null, null, new google.maps.Size(55,57));
+	//var image = new google.maps.MarkerImage("img/map-marker@2x.png", null, null, null, new google.maps.Size(55,57));
 
 	// Includes custom marker on map
-	var myLatLng = new google.maps.LatLng(41.38031,2.17416);
+	var myLatLng = new google.maps.LatLng(47.60759,-122.343227);
 	var beachMarker = new google.maps.Marker({
 		position: myLatLng,
 		map: map,
-		icon: image
+		icon: "assets/img/aquarium.png"
+	});
+	
+		// Includes custom marker on map
+	var myLatLng = new google.maps.LatLng(47.608858,-122.341836);
+	var beachMarker = new google.maps.Marker({
+		position: myLatLng,
+		map: map,
+		icon: "assets/img/parking.png"
 	});
 
 	map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
