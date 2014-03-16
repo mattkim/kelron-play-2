@@ -325,23 +325,23 @@
                                     </div>
                                     <div class="large-6 columns">
                                         <label for="lastname">Last Name</label>
-                                        <input type="text" name="entry.1429832955" value="" class="input-field" id="entry_1429832955" dir="auto" aria-label="Last Name  " aria-required="true" required="" title="">
+                                        <input type="text" name="entry.1429832955" value="" class="input-field" id="lastname" dir="auto" aria-label="Last Name  " aria-required="true" required="" title="">
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="large-6 columns">
                                         <label for="email">Email</label>
-                                        <input type="text" name="entry.533078986" value="" class="input-field" id="entry_533078986" dir="auto" aria-label="E-mail  " title="">
+                                        <input type="text" name="entry.533078986" value="" class="input-field" id="email" dir="auto" aria-label="E-mail  " title="">
                                     </div>
                                     <div class="large-6 columns">
                                         <label for="phone">Phone</label>
-                                        <input type="text" name="entry.1246857337" value="" class="input-field" id="entry_1246857337" dir="auto" aria-label="Phone   " title="">
+                                        <input type="text" name="entry.1246857337" value="" class="input-field" id="phone" dir="auto" aria-label="Phone   " title="">
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="large-6 columns">
-                                        <label for="email">Tell us about food allergies you may have.</label>
-                                        <input type="text" name="entry.1162802384" value="" class="input-field" id="entry_1162802384" dir="auto" aria-label="Tell us about food allergies you may have.   " title="">
+                                        <label for="allergies">Tell us about food allergies you may have.</label>
+                                        <input type="text" name="entry.1162802384" value="" class="input-field" id="allergies" dir="auto" aria-label="Tell us about food allergies you may have.   " title="">
                                     </div>
                                 </div>
                             </fieldset>
@@ -349,14 +349,14 @@
                                 <legend>Will you be attending?</legend>
                                 <div class="large-6 columns">
                                     <label for="radio1">
-                                        <input type="radio" name="entry.1633837682" value="Accepts with pleasure!" id="group_1633837682_1" role="radio" class="ss-q-radio" aria-label="Accepts with pleasure!">
+                                        <input type="radio" name="entry.1633837682" value="Accepts with pleasure!" id="radio1" role="radio" class="ss-q-radio" aria-label="Accepts with pleasure!">
                                             <span class="custom radio"></span>
                                             <span class="radio-label">Accepts with Pleasure!</span>
                                     </label>
                                 </div>
                                 <div class="large-6 columns">
                                     <label for="radio2">
-                                            <input type="radio" name="entry.1633837682" value="Declines with regret." id="group_1633837682_2" role="radio" class="ss-q-radio" aria-label="Declines with regret.">
+                                            <input type="radio" name="entry.1633837682" value="Declines with regret." id="radio2" role="radio" class="ss-q-radio" aria-label="Declines with regret.">
                                             <span class="custom radio"></span>
                                             <span class="radio-label">Declines with Regret.</span>
                                     </label>
@@ -366,13 +366,14 @@
                             <input type="hidden" name="pageHistory" value="0">
                             <input type="hidden" name="fromEmail" value="false">
                             <input type="hidden" name="fbzx" value="-4899940079954488077">
-                            <input type="submit" name="submit" value="Submit" id="ss-submit" style="background-color:#A4DCD1; color:#FFF;"></td>
-                                                
+                            <!--<input type="submit" name="submit" value="Submit" id="ss-submit" style="background-color:#A4DCD1; color:#FFF;" >-->
 
-                            <!--<a class="button radius" href="#">
+                            <a class="button radius" href="#">
                                 <i class="fa fa-envelope"></i>
-                                <span class="btn-label">Send</span>
-                            </a>-->
+                                <span class="btn-label">
+                                <input type="submit" name="submit" value="Submit" id="ss-submit"  >
+                                </span>
+                            </a>
                                 
                                 <!--
                             <input type="text" name="entry.1152332749" value="" class="input-field" id="entry_1152332749" dir="auto" aria-label="First Name  " aria-required="true" required="" title="">
