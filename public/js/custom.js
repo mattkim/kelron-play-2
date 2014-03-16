@@ -116,7 +116,7 @@ function initialize() {
 	var beachMarker = new google.maps.Marker({
 		position: myLatLng,
 		map: map,
-		icon: "assets/img/aquarium.png"
+		icon: "https://maps.google.com/mapfiles/kml/shapes/schools_maps.png"
 	});
 	
 		// Includes custom marker on map
@@ -124,7 +124,7 @@ function initialize() {
 	var beachMarker = new google.maps.Marker({
 		position: myLatLng,
 		map: map,
-		icon: "assets/img/parking.png"
+		icon: "https://maps.google.com/mapfiles/kml/shapes/schools_maps.png"
 	});
 
 	map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
