@@ -366,13 +366,12 @@
                             <input type="hidden" name="pageHistory" value="0">
                             <input type="hidden" name="fromEmail" value="false">
                             <input type="hidden" name="fbzx" value="-4899940079954488077">
+                            <input type="submit" name="submit" value="Submit" id="ss-submit" style="visibility: hidden;"  >
                             <!--<input type="submit" name="submit" value="Submit" id="ss-submit" style="background-color:#A4DCD1; color:#FFF;" >-->
 
-                            <a class="button radius">
+                            <a class="button radius" href="" onclick="get_form(this).submit(); return false">
                                 <i class="fa fa-envelope"></i>
-                                <span class="btn-label">
-                                <input type="submit" name="submit" value="Submit" id="ss-submit" style="background:transparent;border: none !important"  >
-                                </span>
+                                <span class="btn-label">Send</span>
                             </a>
                                 
                                 <!--
@@ -427,6 +426,24 @@
         <script src="@routes.Assets.at("js/vendor/jquery.nav.min.js")"></script>
         <script src="@routes.Assets.at("js/vendor/jquery.flexslider.min.js")"></script>
         <script src="@routes.Assets.at("js/custom.js")"></script>
+        
+        <script type="text/javascript">
+            //<![CDATA[
+            function get_form( element )
+            {
+                while( element )
+                {
+                    element = element.parentNode
+                    if( element.tagName.toLowerCase() == "form" )
+                    {
+                        //alert( element ) //debug/test
+                        return element
+                    }
+                }
+                return 0; //error: no form found in ancestors
+            }
+        //]]>
+        </script>
 
         <script>
         $(document).foundation();
