@@ -60,34 +60,12 @@ $(document).ready(function() {
 /*  Credit to: http://stiern.com/tutorials/adding-custom-google-maps-to-your-website/
 /*-----------------------------------------------------------------------------------*/
 
-var map;
-var myLatlng = new google.maps.LatLng(47.60759,-122.343227); // Specify YOUR coordinates
-
-var MY_MAPTYPE_ID = 'custom_style';
-
 function initialize() {
+    alert("Google maps initializing");
+    var map;
+    var myLatlng = new google.maps.LatLng(47.60759,-122.343227); // Specify YOUR coordinates
+    var MY_MAPTYPE_ID = 'custom_style';
 
-	  var featureOpts = [
-    {
-      stylers: [
-        { hue: "#00ffe6" },
-        { saturation: -20 }
-      ]
-    },{
-      featureType: "road",
-      elementType: "geometry",
-      stylers: [
-        { lightness: 100 },
-        { visibility: "simplified" }
-      ]
-    },{
-      featureType: "road",
-      elementType: "labels",
-      stylers: [
-        { visibility: "off" }
-      ]
-    }
-  ];
 	var mapOptions = {
 		zoom: 17,
 		center: myLatlng,
@@ -100,16 +78,35 @@ function initialize() {
 		mapTypeId: MY_MAPTYPE_ID
 	};
 
-	map = new google.maps.Map(document.getElementById('map-canvas'),
-		mapOptions);
-
+	map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+/*
+ var featureOpts = [
+ {
+ stylers: [
+ { hue: "#00ffe6" },
+ { saturation: -20 }
+ ]
+ },{
+ featureType: "road",
+ elementType: "geometry",
+ stylers: [
+ { lightness: 100 },
+ { visibility: "simplified" }
+ ]
+ },{
+ featureType: "road",
+ elementType: "labels",
+ stylers: [
+ { visibility: "off" }
+ ]
+ }
+ ];
+ 
 	var styledMapOptions = {
 		name: 'Custom Style'
 	};
 
 	var customMapType = new google.maps.StyledMapType(featureOpts, styledMapOptions);
-
-	//var image = new google.maps.MarkerImage("img/map-marker@2x.png", null, null, null, new google.maps.Size(55,57));
 
 	// Includes custom marker on map
 	var myLatLng = new google.maps.LatLng(47.60759,-122.343227);
@@ -128,6 +125,7 @@ function initialize() {
 	});
 
 	map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
+ */
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
