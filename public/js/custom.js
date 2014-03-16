@@ -31,7 +31,7 @@ $(document).ready(function() {
 
 	function backStrech() {
 		$("aside").backstretch([
-			"img/placeholder-1.png",
+			"https://scontent-a-sea.xx.fbcdn.net/hphotos-frc3/t31.0-8/1658521_10152328683880844_56619524_o.jpg",
 
 			], {duration: 5000, fade: 1000});
 	}
@@ -79,6 +79,7 @@ function initialize() {
 	};
 
 	map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+    alert("Finished initializing map")
 /*
  var featureOpts = [
  {
