@@ -61,7 +61,7 @@ $(document).ready(function() {
 /*-----------------------------------------------------------------------------------*/
 
 function initialize() {
-    alert("Google maps initializing");
+
     var map;
     var myLatlng = new google.maps.LatLng(47.60759,-122.343227); // Specify YOUR coordinates
     var MY_MAPTYPE_ID = 'custom_style';
@@ -79,7 +79,7 @@ function initialize() {
 	};
 
 	map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-    alert("Finished initializing map")
+
 /*
  var featureOpts = [
  {
