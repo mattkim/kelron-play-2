@@ -61,7 +61,6 @@ $(document).ready(function() {
 /*-----------------------------------------------------------------------------------*/
 
 function initialize() {
-
     var map;
     var myLatlng = new google.maps.LatLng(47.60759,-122.343227); // Specify YOUR coordinates
     var MY_MAPTYPE_ID = 'custom_style';
@@ -80,28 +79,29 @@ function initialize() {
 
 	map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
-/*
- var featureOpts = [
- {
- stylers: [
- { hue: "#00ffe6" },
- { saturation: -20 }
- ]
- },{
- featureType: "road",
- elementType: "geometry",
- stylers: [
- { lightness: 100 },
- { visibility: "simplified" }
- ]
- },{
- featureType: "road",
- elementType: "labels",
- stylers: [
- { visibility: "off" }
- ]
- }
- ];
+    var featureOpts = [
+      {
+        stylers: [
+          { hue: "#00ffe6" },
+          { saturation: -20 }
+        ]
+      },
+      {
+        featureType: "road",
+        elementType: "geometry",
+        stylers: [
+          { lightness: 100 },
+          { visibility: "simplified" }
+        ]
+      },
+      {
+        featureType: "road",
+        elementType: "labels",
+        stylers: [
+          { visibility: "off" }
+        ]
+      }
+    ];
  
 	var styledMapOptions = {
 		name: 'Custom Style'
@@ -117,7 +117,6 @@ function initialize() {
 		icon: "https://maps.google.com/mapfiles/kml/shapes/schools_maps.png"
 	});
 	
-		// Includes custom marker on map
 	var myLatLng = new google.maps.LatLng(47.608858,-122.341836);
 	var beachMarker = new google.maps.Marker({
 		position: myLatLng,
@@ -126,7 +125,7 @@ function initialize() {
 	});
 
 	map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
- */
+
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
