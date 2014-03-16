@@ -1,4 +1,4 @@
-@(photo1:String, photo2:String, photo3:String, photo4:String, photo5:String, photo6:String, photo7:String, photo8:String)
+@(images:Images)
 
 @main("Welcome to Play") {
 
@@ -142,8 +142,8 @@
             <div class="small-12 columns">
                 <ul class="clearing-thumbs" data-clearing>
                     <li>
-                        <a href ="@photo1">
-                            <img src="@photo1" alt="Engagement" class="fade-in">
+                        <a href ="@images.photo1">
+                            <img src="@images.photo1" alt="Engagement" class="fade-in">
                                 <span class="overlay-label"></span>
                         </a>
                     </li>
@@ -160,8 +160,8 @@
                         </a>
                     </li>
                     <li>
-                        <a href ="@photo4">
-                            <img src="@photo4" alt="Our Reception" class="fade-in">
+                        <a href ="@images.photo4">
+                            <img src="@images.photo4" alt="Our Reception" class="fade-in">
                                 <span class="overlay-label"></span>
                         </a>
                     </li>
@@ -172,8 +172,8 @@
                         </a>
                     </li>
                     <li>
-                        <a href ="@photo6">
-                            <img src="@photo6" alt="Bouquet" class="fade-in">
+                        <a href ="@images.photo6">
+                            <img src="@images.photo6" alt="Bouquet" class="fade-in">
                                 <span class="overlay-label"></span>
                         </a>
                     </li>
@@ -184,8 +184,8 @@
                         </a>
                     </li>
                     <li>
-                        <a href ="@photo8">
-                            <img src="@photo8" alt="Memories" class="fade-in">
+                        <a href ="@images.photo8">
+                            <img src="@images.photo8" alt="Memories" class="fade-in">
                                 <span class="overlay-label"></span>
                         </a>
                     </li>
@@ -349,9 +349,10 @@
                 </a>
                 </p>
             </div><!-- END .large-8 -->
-            <!--Google map-->
+            <!--Google map
             <iframe width="100%" height="500px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?ie=UTF8&amp;q=seattle+aquarium&amp;fb=1&amp;gl=us&amp;hq=seattle+aquarium&amp;cid=13359277549937890737&amp;ll=47.60759,-122.343227&amp;spn=0.006295,0.006295&amp;t=m&amp;output=embed"></iframe><br /><!--<small><a href="https://maps.google.com/maps?ie=UTF8&amp;q=seattle+aquarium&amp;fb=1&amp;gl=us&amp;hq=seattle+aquarium&amp;cid=13359277549937890737&amp;ll=47.60759,-122.343227&amp;spn=0.006295,0.006295&amp;t=m&amp;source=embed" style="color:#0000FF;text-align:left"></a></small>
-            <!--End Google Map-->
+            -->
+            <!--<div id="map-canvas" style="width:100%; height 500px;"></div>-->
         </div><!-- END .row -->
     </div><!--END main-->
 </div><!--END .row-->
