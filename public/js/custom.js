@@ -77,7 +77,7 @@ function initialize() {
 		mapTypeId: MY_MAPTYPE_ID
 	};
 
-	map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+	map = new google.maps.Map(document.getElementById('map-canvas-kara'), mapOptions);
 
     var featureOpts = [
       {
