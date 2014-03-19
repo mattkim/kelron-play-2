@@ -114,14 +114,14 @@ function initialize() {
 	var beachMarker = new google.maps.Marker({
 		position: myLatLng,
 		map: map,
-		icon: "https://maps.google.com/mapfiles/kml/shapes/schools_maps.png"
+		icon: "@routes.Assets.at("img/aquarium.png")"
 	});
 	
 	var myLatLng = new google.maps.LatLng(47.608858,-122.341836);
 	var beachMarker = new google.maps.Marker({
 		position: myLatLng,
 		map: map,
-		icon: "https://maps.google.com/mapfiles/kml/shapes/schools_maps.png"
+		icon: "@routes.Assets.at("img/parking.png")"
 	});
 
 	map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
