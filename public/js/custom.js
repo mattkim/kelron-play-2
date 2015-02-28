@@ -114,14 +114,14 @@ function initialize() {
 	var beachMarker = new google.maps.Marker({
 		position: myLatLng,
 		map: map,
-		icon: "https://scontent-b-sea.xx.fbcdn.net/hphotos-ash4/t1.0-9/1377431_10152335342445844_1434926537_n.jpg"
+		icon: "https://s3-us-west-2.amazonaws.com/kelron-play-2/whale.jpg"
 	});
 	
 	var myLatLng = new google.maps.LatLng(47.608858,-122.341836);
 	var beachMarker = new google.maps.Marker({
 		position: myLatLng,
 		map: map,
-		icon: "https://scontent-b-sea.xx.fbcdn.net/hphotos-frc3/t1.0-9/10009846_10152335342450844_1190573358_n.jpg"
+    icon: "https://s3-us-west-2.amazonaws.com/kelron-play-2/parking.jpg"
 	});
 
 	map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
