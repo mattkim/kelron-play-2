@@ -10,7 +10,7 @@ class Images {
   var bride: String = "https://s3-us-west-2.amazonaws.com/kelron-play-2/bride.jpg"
   var groom: String = "https://s3-us-west-2.amazonaws.com/kelron-play-2/groom.jpg"
   var photo1: String = "https://s3-us-west-2.amazonaws.com/kelron-play-2/kelron_album_1.jpg"
-  var photo2: String = "https://s3-us-west-2.amazonaws.com/kelron-play-2/kelron_album_2.jpb"
+  var photo2: String = "https://s3-us-west-2.amazonaws.com/kelron-play-2/kelron_album_2.jpg"
   var photo3: String = "https://s3-us-west-2.amazonaws.com/kelron-play-2/kelron_album_3.jpg"
   var photo4: String = "https://s3-us-west-2.amazonaws.com/kelron-play-2/kelron_album_4.jpg"
   var photo5: String = "https://s3-us-west-2.amazonaws.com/kelron-play-2/kelron_album_5.jpg"
